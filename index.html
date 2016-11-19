@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KharmaWeather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <nav id="navbar" class="navbar navbar-fixed-top container-fluid">
+            <div class="navbar-left">
+                <div class="font_black">
+                    <a href="#"><p class="font-white font_black title">Kharmaweather</p></a>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <div id="page1" class="image_big col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="pattern">
+                        <div class="container-fluid">
+                            <div id="currently">
+                                <div id="currently_inner">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 icon">
+                                        <div><span id="icon_on_change" class="font-white"></span></div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 element">
+                                        <div>
+                                            <p id="word_on_change" class="font_black font-white word"></p>
+                                        </div>
+                                        <div class="row spacing">
+                                            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                                                <p id="current_temp_on_change" class="font-white font_reg temp_large"></p>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                                                <p id="city_on_change" class="font-white font_light desc_right"></p>
+                                                <p id="current_time_on_change" class="font-white font_light desc_right"></p>
+                                                <p id="summary_time_on_change" class="font-white font_light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page2" class="col-md-12 col-lg-12">
+                 <div class="container-fluid">
+                    <div class="overlay_blur"></div>
+                    <div id="content_page2">
+                        <div id="daily">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                    <p class="ppage2 font_black">___daily</p>
+                                </div>
+                                <div id="onDaily_div" class="row">
+                                    
+                                </div>
+                            </div>
+                            <div id="hourly" class="hidden-sm hidden-xs">
+                                <div id="oncurrently_div" class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div id="info_weather">
+                                            <div id="cold"></div>
+                                            <p class="on_name_info font_reg">cold</p>
+                                            <div id="warm"></div>
+                                            <p class="on_name_info font_reg">warm</p>
+                                            <div id="frezze"></div>
+                                            <p class="on_name_info font_reg">frezze</p>
+                                            <div id="hot"></div>
+                                            <p class="on_name_info font_reg">hot</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <p class="ppage2 font_black">___Hourly</p>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="row">
+                                            <div id="hourly_bar" class="progress">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="all_item_hour" class="row">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="col-md-12  col-lg-12">
+                    <p class="big_word_footer font_black">Hey wanna meet me?</p>
+                </div>
+                <div class="col-md-12  col-lg-12">
+                    <div id="socialink">
+                        <a id="wa" class="col-md-3" href="tel:+6285643296738"><img class="icon_resp" src="img/whatsapp-logo.png"></a>
+                        <a id="fb" class="col-md-3" href="http://facebook.com/pndawa.jalanan"><img class="icon_resp" src="img/facebook-logo.png"></a>
+                        <a id="insta" class="col-md-3" href="http://instagram.com/cahyowhy"><img class="icon_resp" src="img/instagram-logo.png"></a>
+                        <a id="blog" class="col-md-3" href="http://cahyowhy.blogspot.co.id"><img class="icon_resp" src="img/blogger-letter-logotype.png"></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12  col-lg-12">
+                            <img class="my_face" src="img/user.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <footer id="myfooter" class="font_light">
+                            <small>
+                    		© Copyright 2016, KharmaWeather, Cahyo Wibowo
+                    	</small>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://momentjs.com/downloads/moment.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+<!--weatherDiv -->
